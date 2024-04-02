@@ -1,0 +1,43 @@
+---
+title: "Impact of Data Handling Errors on Statistical Analysis"
+author: "Qin He"
+date: "2024-04-02"
+format: pdf
+---
+
+# Abstract
+
+This report examines the influence of data handling errors on the analysis of a dataset purportedly sampled from a normal distribution with a mean of one and a standard deviation of one. Through simulation, we explore the implications of instrument limitations and preprocessing mistakes on statistical conclusions, particularly the estimation of the population mean in relation to the null hypothesis that it is greater than zero.
+
+# Introduction
+
+Statistical analysis relies on the integrity and accuracy of data collection and preprocessing. However, errors in these stages can lead to significant biases and inaccuracies in conclusions. This study simulates a scenario where data collected with a specific mean and standard deviation undergoes unintentional alterations due to instrument memory limitations and preprocessing errors, highlighting the potential impact on statistical analysis.
+
+# Methodology
+
+The true data generating process is a normal distribution with a mean of one and a standard deviation of one. A simulated sample of 1,000 observations is collected, with the last 100 observations being a repeat of the first 100 due to instrument memory limitations. During preprocessing, half of the negative values are inadvertently changed to positive, and values between 1 and 1.1 have their decimal places incorrectly shifted.
+
+# Results
+
+The preprocessing errors led to an adjusted sample mean of 1.03 and a standard deviation of 0.92. These alterations deviate from the expected characteristics of the original normal distribution, potentially affecting the outcome of statistical tests.
+
+# Discussion
+
+The instrument's memory limitation and preprocessing errors introduced systematic biases into the dataset. The overwriting of observations and the alteration of specific data points resulted in a misleading representation of the underlying distribution. These issues underscore the importance of rigorous data verification procedures and the potential consequences of preprocessing errors on statistical analysis.
+
+## Strategies for Mitigation
+
+To mitigate such risks, the following strategies are recommended:
+
+1. **Data Integrity Checks**: Implement automated scripts to verify the uniqueness and integrity of data points post-collection.
+2. **Error Logging**: Equip data collection instruments with error logging capabilities to track and alert on potential memory overwrites or data loss.
+3. **Preprocessing Audit**: Establish a protocol for preprocessing steps, including manual and automated audits of changes, to ensure data alterations are intentional and documented.
+4. **Training and Guidelines**: Provide comprehensive training and detailed guidelines for research assistants on common data handling errors and standard operating procedures.
+
+# Conclusion
+
+The simulation highlights the critical impact of data handling errors on the analysis of statistical data. By adopting rigorous verification and auditing processes, researchers can significantly reduce the risk of such errors, ensuring the reliability and accuracy of their analyses.
+
+# Pair Student
+
+Frank(Zijun) Meng
