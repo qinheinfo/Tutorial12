@@ -5,6 +5,15 @@ date: "2024-04-02"
 format: pdf
 ---
 
+```{r}
+#| include: false
+#| warning: false
+#| message: false
+
+library(tidyverse)
+library(here)
+```
+
 # Abstract
 
 This report examines the influence of data handling errors on the analysis of a dataset purportedly sampled from a normal distribution with a mean of one and a standard deviation of one. Through simulation, we explore the implications of instrument limitations and preprocessing mistakes on statistical conclusions, particularly the estimation of the population mean in relation to the null hypothesis that it is greater than zero.
